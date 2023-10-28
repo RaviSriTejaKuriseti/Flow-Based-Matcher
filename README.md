@@ -58,10 +58,10 @@ Please refer to [Pedestron repository](https://github.com/hasanirtiza/Pedestron)
 
 ## Acknowlegements
 
-Our code is based on [DINO](https://github.com/IDEA-Research/DINO) and [AlignDETR](https://github.com/FelixCaae/AlignDETR).
+Our code is based on [DINO](https://github.com/IDEA-Research/DINO) and [Align DETR](https://github.com/FelixCaae/AlignDETR).
 
 # References
 
 * [Pedestron](https://openaccess.thecvf.com/content/CVPR2021/papers/Hasan_Generalizable_Pedestrian_Detection_The_Elephant_in_the_Room_CVPR_2021_paper.pdf)
 * [DINO](https://arxiv.org/pdf/2203.03605.pdf)
-* [Align-DETR](https://arxiv.org/abs/2304.07527)
+* [Align DETR](https://arxiv.org/abs/2304.07527)
