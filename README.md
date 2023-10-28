@@ -1,4 +1,4 @@
-# Parts-aware-DINO
+# Flow-Based-Matcher
 Official implementation of the WACV-2024 paper Many-to-one Matching for Robust Transformer based Pedestrian Detection
 
 ## Installation
@@ -17,7 +17,7 @@ Official implementation of the WACV-2024 paper Many-to-one Matching for Robust T
 
    2. Install Pytorch and all other required packages
 
-   You can directly create a conda environment with all required packages by running the script
+      You can directly create a conda environment with all required packages by running the following command
    ```
    sh install_environment.sh
    ```
@@ -46,8 +46,8 @@ Please refer to [Pedestron repository](https://github.com/hasanirtiza/Pedestron)
 | Caltech Pedestrian |  **2.0**   | **2.8**  | **38.6** |
 
 ## Training Details
-* To ensure the correct directory is being used for training and validation data, adjustments need to be made in the [file](datasets/coco.py).
-* The configuration file used for training can be found at [config file](config/DINO/DINO_4scale_swin.py). Citypersons dataset was trained using a batch size of 2, while Caltech was trained using a batch size of 4.
+* To ensure the correct directory is being used for training and validation data, adjustments need to be made in the file [coco.py](datasets/coco.py).
+* The configuration file used for training can be found at config file[DINO_4scale_swin.py](config/DINO/DINO_4scale_swin.py). Citypersons dataset was trained using a batch size of 2, while Caltech was trained using a batch size of 4.
 * During training, it is important to adjust the maximum image size as needed. Details can be seen in the [transform file](config/DINO/coco_transformer.py)
 
 * The following command can be used for multi GPU training.
@@ -55,6 +55,10 @@ Please refer to [Pedestron repository](https://github.com/hasanirtiza/Pedestron)
   python3 -m torch.distributed.launch --nproc_per_node= gpu_count --master_port=11001 main.py --output_dir path/to/output -c path/to/config --coco_path /path/to/dataset/ --options dn_scalar=100 embed_init_tgt=TRUE dn_label_coef=1.0 dn_bbox_coef=1.0 use_ema=False dn_box_noise_scale=1.0 backbone_dir=/path/to/backbone/ --pretrain_model_path /path/to/pretrain_model --initilize_cross_attention --finetune_ignore label_enc.weight class_embed 
   ```
 * Pretrained models can be found in the [link](https://csciitd-my.sharepoint.com/:f:/g/personal/anz197518_iitd_ac_in/EgAsiTF6lxZPurvohkTsxCAB8IbM6tC-2fEgSUcVVtI2Qg?e=hzBeyu)
+
+## Acknowlegements
+
+Our code is based on [DINO](https://github.com/IDEA-Research/DINO) and [AlignDETR](https://github.com/FelixCaae/AlignDETR).
 
 # References
 
