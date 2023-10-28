@@ -1,5 +1,5 @@
 # Parts-aware-DINO
-Official implementation of Parts based Attention for Highly Occluded Pedestrian Detection with Transformers
+Official implementation of the WACV-2024 paper Many-to-one Matching for Robust Transformer based Pedestrian Detection
 
 ## Installation
 
