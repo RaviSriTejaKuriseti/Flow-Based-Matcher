@@ -47,7 +47,7 @@ Please refer to [Pedestron repository](https://github.com/hasanirtiza/Pedestron)
 
 ## Training Details
 * To ensure the correct directory is being used for training and validation data, adjustments need to be made in the file [coco.py](datasets/coco.py).
-* The configuration file used for training can be found at config file[DINO_4scale_swin.py](config/DINO/DINO_4scale_swin.py). Citypersons dataset was trained using a batch size of 2, while Caltech was trained using a batch size of 4.
+* The configuration file used for training can be found at config file [DINO_4scale_swin.py] (config/DINO/DINO_4scale_swin.py). Citypersons dataset was trained using a batch size of 2, while Caltech was trained using a batch size of 4.
 * During training, it is important to adjust the maximum image size as needed. Details can be seen in the [transform file](config/DINO/coco_transformer.py)
 
 * The following command can be used for multi GPU training.
