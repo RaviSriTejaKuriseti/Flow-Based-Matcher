@@ -1,5 +1,8 @@
 # Flow-Based-Matcher
-Official implementation of the WACV-2024 paper Many-to-one Matching for Robust Transformer based Pedestrian Detection
+
+Official implementation of the WACV-2024 paper [Many-to-one Matching for Robust Transformer based Pedestrian Detection](https://openaccess.thecvf.com/content/WACV2024/papers/Shastry_Favoring_One_Among_Equals_-_Not_a_Good_Idea_Many-to-One_WACV_2024_paper.pdf)
+
+Supplementary Material accompanying the paper can be found [here](https://openaccess.thecvf.com/content/WACV2024/supplemental/Shastry_Favoring_One_Among_WACV_2024_supplemental.pdf)
 
 ## Installation
 
@@ -59,6 +62,20 @@ Please refer to [Pedestron repository](https://github.com/hasanirtiza/Pedestron)
 ## Acknowlegements
 
 Our code is based on [DINO](https://github.com/IDEA-Research/DINO) and [Align DETR](https://github.com/FelixCaae/AlignDETR).
+
+## Citation
+
+You can cite our work by using the following BibTeX
+```
+@InProceedings{Shastry_2024_WACV,
+    author    = {Shastry, K.N. Ajay and Teja, K. Ravi Sri and Nigam, Aditya and Arora, Chetan},
+    title     = {Favoring One Among Equals - Not a Good Idea: Many-to-One Matching for Robust Transformer Based Pedestrian Detection},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2024},
+    pages     = {759-768}
+}
+```
 
 # References
 
